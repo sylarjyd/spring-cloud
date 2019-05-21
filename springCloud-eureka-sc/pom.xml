@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+	http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.jyd.sc</groupId>
+	<artifactId>sc</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>sc</name>
+	<description>sc</description>
+
+	<parent>
+
+		<groupId>org.springframework.boot</groupId>
+
+		<artifactId>spring-boot-starter-parent</artifactId>
+
+		<version>1.5.5.RELEASE</version>
+
+	</parent>
+
+
+
+	<modules>
+
+		<module>springCloud-eureka-server</module>
+
+		<module>springCloud-eureka-client</module>
+
+	</modules>
+
+
+
+	<dependencyManagement>
+
+		<dependencies>
+
+			<dependency>
+
+				<groupId>org.springframework.cloud</groupId>
+
+				<artifactId>spring-cloud-dependencies</artifactId>
+
+				<version>Dalston.SR3</version>
+
+				<type>pom</type>
+
+				<scope>import</scope>
+
+			</dependency>
+
+		</dependencies>
+
+	</dependencyManagement>
+
+
+
+	<dependencies>
+
+		<dependency>
+
+			<groupId>org.springframework.cloud</groupId>
+
+			<artifactId>spring-cloud-starter-config</artifactId>
+
+		</dependency>
+
+		<dependency>
+
+			<groupId>org.springframework.cloud</groupId>
+
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+
+		</dependency>
+
+		<dependency>
+
+			<groupId>org.springframework.boot</groupId>
+
+			<artifactId>spring-boot-devtools</artifactId>
+
+			<optional>true</optional>
+
+		</dependency>
+
+	</dependencies>
+</project>

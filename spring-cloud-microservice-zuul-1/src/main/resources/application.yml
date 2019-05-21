@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: zuul-sever
+    
+eureka: 
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client: 
+    service-url:  
+      defaultZone: http://localhost:7961/eureka/
+      
+zuul:
+  routes:
+    serviceName:
+      path: /exampleService/**
+#      service-id: consumer-2   
+      url: http://127.0.0.1:7961/  
+      
+      
+      
+    

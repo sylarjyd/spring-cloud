@@ -1,0 +1,14 @@
+server:
+  port: 8082
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+spring:
+  application:
+    name: gateway
+zuul:
+  routes:
+    service: service（用于发布的服务，可以是多个）

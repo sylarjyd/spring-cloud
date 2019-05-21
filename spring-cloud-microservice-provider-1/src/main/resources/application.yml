@@ -1,0 +1,21 @@
+server:
+  port: 7901
+  
+spring:
+  application:
+    name: provider-1
+#  security: 
+#    user: 
+#      name: root
+#      password: root
+# 
+eureka: 
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+#    ip-address: 127.0.0.1
+#    instance-id: ${eureka.instance.ip-address}:${server.port}
+  client: 
+    service-url:  
+      defaultZone: http://localhost:7961/eureka/
+    

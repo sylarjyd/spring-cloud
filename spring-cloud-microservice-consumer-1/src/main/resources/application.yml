@@ -1,0 +1,19 @@
+server:
+  port: 7911
+  
+spring:
+  application:
+    name: consumer-1
+#  security:
+#    user:
+#      name: root
+#      password: root
+    
+eureka: 
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:   
+    service-url:
+      defaultZone: http://localhost:7961/eureka/
+    
